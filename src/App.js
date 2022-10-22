@@ -1,10 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ErrorBoundry from './ErrorBoundry';
 import NavRoutes from './Routes';
+
 function App() {
   return (
     <div >
-      <NavRoutes /> 
+  
+    <ErrorBoundry>
+    <NavRoutes />
+    </ErrorBoundry>
+  
+     
+       
+    
+    
     </div>
   );
 }
