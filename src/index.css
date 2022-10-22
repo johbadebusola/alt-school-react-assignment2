@@ -134,6 +134,17 @@ margin: auto;
   min-height: 90vh;
 }
 
+.space{
+  margin-top: 2em;
+  width: 100%;
+  border: 1px solid salmon;
+}
+.pagination{
+ 
+  display: flex;
+  justify-content: center;
+  
+}
 @media (min-width:600px) {
   .user-container {
     display: grid;

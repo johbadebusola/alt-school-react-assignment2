@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Paginate({ totalPost, postPerPage, prevPage, nextPage, paginates }) {
+function Paginate({ totalPost, postPerPage, prevPage, nextPage, paginates,disable }) {
     const pageNumber = []
 
     for (let i = 1; i <= Math.ceil(totalPost / postPerPage); i++) {
@@ -19,9 +19,8 @@ function Paginate({ totalPost, postPerPage, prevPage, nextPage, paginates }) {
                                 {numbers}
                             </a>
                         </li>
-
                     ))}
-                    <li> <a onClick={() => nextPage()} href="#"> Next </a>  </li>
+                    <li> <button onClick={() => nextPage()} disabled={!totalPost} >  Next </button>  </li>
                 </ul>
             </nav>
         </>
